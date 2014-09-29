@@ -1,18 +1,27 @@
+;;; Package --- Sumary
 ;; load my settings
 
-(add-to-list 'load-path "~/.emacs.d/")
+;;; Commentary:
+;; load all my settings
+
+;;; Code:
+(add-to-list 'load-path "~/.emacs.d/fs_lisp/")
 
 ;; load basic settings
-(load "fs_base.el")
+(require 'fs_basic)
 
 ;; load highlight settings
-(load "fs_highlight.el")
+(require 'fs_highlight)
 
 ;; load c++ mode
-(load "fs_cpp_mode.el")
+(require 'fs_cpp_mode)
 
 ;; load w3m
-(load "fs_w3m.el")
+;;(load "fs_w3m.el")
 
 ;; load org-mode settings
-(load "fs_org.el")
+(require 'fs_org)
+
+(provide 'fs_init)
+
+;;; fs_init.el ends here
