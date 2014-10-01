@@ -10,6 +10,9 @@
 ;; load basic settings
 (require 'fs_basic)
 
+;; load font settings
+(require 'fs_font)
+
 ;; load highlight settings
 (require 'fs_highlight)
 
